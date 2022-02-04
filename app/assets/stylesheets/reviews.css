@@ -1,0 +1,74 @@
+.review__show {
+    border-width: 7px;
+    border-style: double;
+    border-color: #78aebe;
+    border-radius: 2%;
+    width: 50%;
+    height: 50%;
+  }
+
+  /*footer */
+footer {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 1%;
+  }
+  
+  .link-box {
+    border-style:double;
+    border-width: 7px;
+    border-color: rgb(177, 164, 248);
+    border-radius: 2%;
+    transition: width 2s;
+  }
+  
+  .link-box:hover {
+    width: 200px;
+  }
+  
+  .edit-bx {
+    background-color: red;
+  }
+  
+  .review-bx {
+    background-color: rgb(33, 146, 33);
+  }
+  
+  .link-wht {
+    border-style:double;
+    border-width: 7px;
+    border-color: rgb(23, 4, 136);
+    border-radius: 2%;
+    transition: width 2s;
+  }
+  
+  .link-wht:hover {
+    width: 200px;
+  }
+  
+  .rotate {
+    animation: rotation 2s linear;
+  }
+  
+  .opp-rotate {
+    animation: rotation-opp 1s linear;
+  }
+  
+  @keyframes rotation-opp  {
+    from {
+      transform: rotate(358deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }

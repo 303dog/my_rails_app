@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+    <html>
+        <div class="line">
+            <h2>Review of <p class='opp-rotate'><u class='game-prev'><%=@review.game.title%></u></p></h2>
+            <b>*Author: <%=@review.user.username%> on <%=@review.game.created_at.strftime("%m-%d-%y")%><br>
+            <br>
+        </div>
+
+        <body>
+            <div class='review__show'>
+                <p><h3><u><%=@review.label%></u></h3></p>
+                <p><b><%=@review.game.title%></p>
+                <p class='gshow'><em><%=@review.summary%></em></b></p>
+            </div>
+        </body>
+        <footer>
+            <p class='user__current rotate'><em><%=edit_delete%></em></p>
+            <p class='link-box review-bx'><%=link_to "Give a Game Review", new_review_path%></p>
+            <p class='link-box btn-pink'><%=link_to "Back to the Games", games_path%></p>
+        </footer>
+    </html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+    <html>
+        
+        <body>
+            <div class="line">
+                <p><u><h2>Game Library</h2><u></p>            
+            </div>
+            <div class="cards-list"><%@games.each do |gam|%>
+                <div class="card shadow">
+                    <p><b><%=link_to gam.title, game_path(gam)%></b></p> 
+                        <div class="cards-owner shadow">
+                            <%=link_to gam.description, game_path(gam)%>
+                        </div>
+                </div>
+            <%end%>
+            </div>
+            <footer>
+                <p><%=link_to "Submit A Game", new_game_path%></p>
+                <p><%=link_to "Game Reviews", reviews_path%></p>
+            </footer>
+        
+        </body>
+    </html>

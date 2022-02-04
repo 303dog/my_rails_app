@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+    <html>
+    <%=link_to "/  Back to the Games", games_path%><br>
+    <br>
+    
+    <div class='mai2n-div main2-div3'>
+    <div class="line">
+        <p><u><h2 class='hi-lite'><%= @game.title %></h2></u></p>
+    </div>
+    
+    <div class="review__show">
+        <p class='gshow2'><b>Genre:</b><em><%= @game.genre %></em></p>
+        <p class='gamShow'><b>Game Theme:</b> <em><%= @game.theme %></em></p>
+        <p class='gshow2'><b>Players:</b> <em><%= @game.num_of_players %></em></p>
+    <div>
+        <p class='gshow2'><b>Game Description:</b> <em><%= @game.description %></em></p>
+    </div>
+    </div>
+    <footer>
+        <p class='user__current'><b><%=link_to "This games reviews", game_reviews_path(@game)%><p>
+        <p class='link-box edit-bx'><b><%=link_to "Edit This Game", edit_game_path(@game)%></p>
+        <p class='link-box review-bx'><%=link_to "Review this game", new_game_review_path(@game)%></p>
+        <p><b class='brush-mark'><h4 class='back-flow'>Do you know about a game we would like?</h4> </p><p  class='link-wht btn-pink'><%=link_to "Submit A New Game", new_game_path%></p></b>
+    </footer>
+    </div>
+    
+    </html>
+

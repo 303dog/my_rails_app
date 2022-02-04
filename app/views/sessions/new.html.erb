@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+  <html>
+    <head>
+      <div class="line"><p>
+        <h2>Log In</h2></p>
+          <%if @error%>
+            <p><%=@error%></p>
+          <%end%>
+    </head>
+      </div>
+      <br>
+      <div class='login__container'>
+        <div class="login">
+          <%=form_for :user do |f|%>
+          <%=f.label :username%>
+          <%=f.text_field :username%><br>
+          <%=f.label :password%>
+          <%=f.password_field :password%>
+          <%=f.submit "Log in"%>
+          <%end%>
+        </div>
+      </div>
+    <footer>
+      <%=button_to "Use Google to log in", '/auth/google_oauth2'%>
+    </footer>
+    
+
+  </html>

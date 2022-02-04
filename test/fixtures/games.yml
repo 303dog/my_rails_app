@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  genre: MyString
+  theme: MyString
+  num_of_players: MyText
+  game_id: 1
+
+two:
+  genre: MyString
+  theme: MyString
+  num_of_players: MyText
+  game_id: 1
